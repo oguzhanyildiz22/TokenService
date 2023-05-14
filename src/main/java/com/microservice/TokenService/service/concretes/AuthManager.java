@@ -1,11 +1,14 @@
 package com.microservice.TokenService.service.concretes;
 
+import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -47,6 +50,7 @@ public class AuthManager implements AuthService{
 		return authResponseDto;
 	}
 
+	
 	@Override
 	public String register(RequestDto requestDto){
 		if (existsByUsername(requestDto)) {
@@ -83,6 +87,21 @@ public class AuthManager implements AuthService{
 			return true;
 		}
 		return false;
+	}
+
+
+	@Override
+	public List<SimpleGrantedAuthority> getRole(String authorizationHeader) {
+        String jwtToken = authorizationHeader.substring(7);
+		
+		if (jwtGenerator.validateToken(jwtToken)) {
+			List<SimpleGrantedAuthority> roles = jwtGenerator.getAuthoritiesFromToken(jwtToken);
+			
+			return roles;
+		}
+		
+		List<SimpleGrantedAuthority> hata = new ArrayList<>();
+		return hata;
 	}
 
 }

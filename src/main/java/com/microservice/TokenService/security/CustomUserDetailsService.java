@@ -29,7 +29,11 @@ public class CustomUserDetailsService implements UserDetailsService{
 		UserEntity user = userRepository.findByUsername(username).orElseThrow(() -> new UsernameNotFoundException("user not found"));
 	    return new User(user.getUsername() , user.getPassword() , mapRolesAuthorities(user.getRoles()));
 	}
-	
+	/**
+	 * Converts the given list of roles to a collection of SimpleGrantedAuthority objects.
+	 * @param roles The list of roles to be converted.
+	 * @return A collection of SimpleGrantedAuthority objects. Returns null if the role list is empty.
+	 */
 	private Collection<GrantedAuthority> mapRolesAuthorities(List<Role> roles){
 		return roles.stream().map(role -> new SimpleGrantedAuthority(role.getName())).collect(Collectors.toList());
 	}

@@ -54,6 +54,10 @@ public class SecurityConfig {
 		return new BCryptPasswordEncoder();
 	}
 	
+	/**
+	 * Returns a new instance of JWTAuthenticationFilter.
+	 * @return A new instance of JWTAuthenticationFilter.
+	 */
 	@Bean
 	public JWTAuthenticationFilter jwtAuthenticationFilter() {
 		return new JWTAuthenticationFilter();

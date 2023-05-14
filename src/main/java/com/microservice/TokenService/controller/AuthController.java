@@ -44,18 +44,20 @@ public class AuthController {
 		return authService.register(requestDto);
 	}
 	
+	
 	@GetMapping("/getRole")
 	public List<SimpleGrantedAuthority> getRole(@RequestHeader("Authorization") String authorizationHeader){
-		String jwtToken = authorizationHeader.substring(7);
-		
-		if (jwtGenerator.validateToken(jwtToken)) {
-			List<SimpleGrantedAuthority> roles = jwtGenerator.getAuthoritiesFromToken(jwtToken);
-			
-			return roles;
-		}
-		
-		List<SimpleGrantedAuthority> hata = new ArrayList<>();
-		return hata;
+//		String jwtToken = authorizationHeader.substring(7);
+//		
+//		if (jwtGenerator.validateToken(jwtToken)) {
+//			List<SimpleGrantedAuthority> roles = jwtGenerator.getAuthoritiesFromToken(jwtToken);
+//			
+//			return roles;
+//		}
+//		
+//		List<SimpleGrantedAuthority> hata = new ArrayList<>();
+//		return hata;
+		return authService.getRole(authorizationHeader);
 	}
 	
 	
