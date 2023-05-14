@@ -1,6 +1,7 @@
 package com.microservice.TokenService.controller;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -44,10 +45,8 @@ public class AuthController {
 	@Autowired
 	private JwtGenerator jwtGenerator;
 	
-	
-	
-	@Autowired
-	
+
+
 	@PostMapping("login")
 	public ResponseEntity<AuthResponseDto> login(@RequestBody LoginDto loginDto){
 		Authentication authentication = authenticationManager.authenticate(
