@@ -20,8 +20,14 @@ import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.microservice.TokenService.dto.AuthResponseDto;
+import com.microservice.TokenService.dto.LoginDto;
+import com.microservice.TokenService.dto.RequestDto;
+import com.microservice.TokenService.entity.Role;
+import com.microservice.TokenService.entity.UserEntity;
 import com.microservice.TokenService.repository.RoleRepository;
 import com.microservice.TokenService.repository.UserRepository;
+import com.microservice.TokenService.security.JwtGenerator;
 
 @RestController
 @RequestMapping("/api/auth")
@@ -58,7 +64,7 @@ public class AuthController {
 		if (userRepository.existsByUsername(requestDto.getUsername())) {
 			return new ResponseEntity<>("Username is taken!",HttpStatus.BAD_REQUEST); 
 		}
-		UserEntitiy user = new UserEntitiy();
+		UserEntity user = new UserEntity();
 		user.setUsername(requestDto.getUsername());
 		user.setPassword(passwordEncoder.encode(requestDto.getPassword()));
 		
