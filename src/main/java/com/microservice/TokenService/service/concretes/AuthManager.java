@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -36,25 +38,40 @@ public class AuthManager implements AuthService{
 	@Autowired
 	private JwtGenerator jwtGenerator;
 	
+	private static final Logger logger = LogManager.getLogger(AuthManager.class);
+	
 	@Override
 	public AuthResponseDto login(LoginDto loginDto) {
+		
+		logger.info("Authenticating user {}", loginDto.getUsername());
 		
 		Authentication authentication = authenticationManager.authenticate(
 				new UsernamePasswordAuthenticationToken(loginDto.getUsername()
 						,loginDto.getPassword()));
+		
+		logger.info("User {} authenticated successfully", loginDto.getUsername());
+		
 		SecurityContextHolder.getContext().setAuthentication(authentication);
 		String token = jwtGenerator.generateToken(authentication);
 		
+		logger.info("Generated JWT token for user {}", loginDto.getUsername());
+		
 		AuthResponseDto authResponseDto = new AuthResponseDto();
 		authResponseDto.setAccessToken(token);
+		
+		logger.info("Returning auth response for user {}", loginDto.getUsername());
+		
 		return authResponseDto;
 	}
 
 	
 	@Override
 	public String register(RequestDto requestDto){
+		
+		logger.info("Registering user {}", requestDto.getUsername());
+		
 		if (existsByUsername(requestDto)) {
-			
+			logger.warn("Username {} is taken", requestDto.getUsername());
 			return "Username is taken!";
 		}
 		UserEntity user = new UserEntity();
@@ -63,12 +80,15 @@ public class AuthManager implements AuthService{
 		
 	
 		if (existsByName(requestDto)) {
+			 logger.warn("Role name {} is invalid", requestDto.getRole());
 			return "Wrong role_name. You can only use these words:'ADMIN','OPERATOR','TEAM_LEADER'";
 		}
 		Role roles = roleRepository.findByName(requestDto.getRole()).get();
 		user.setRoles(Collections.singletonList(roles));
 		
 		userRepository.save(user);
+		
+		logger.info("User {} registered successfully", requestDto.getUsername());
 		return "register successful";
 		
 	}
@@ -92,14 +112,15 @@ public class AuthManager implements AuthService{
 
 	@Override
 	public List<SimpleGrantedAuthority> getRole(String authorizationHeader) {
+		logger.info("getRole() function started.");
         String jwtToken = authorizationHeader.substring(7);
 		
 		if (jwtGenerator.validateToken(jwtToken)) {
 			List<SimpleGrantedAuthority> roles = jwtGenerator.getAuthoritiesFromToken(jwtToken);
-			
+			logger.info("getRole() function ended. Returning roles: " + roles.toString());
 			return roles;
 		}
-		
+		logger.info("getRole() function ended. Returning empty list.");
 		List<SimpleGrantedAuthority> hata = new ArrayList<>();
 		return hata;
 	}

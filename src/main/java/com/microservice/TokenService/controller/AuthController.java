@@ -1,8 +1,9 @@
 package com.microservice.TokenService.controller;
 
-import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -30,18 +31,25 @@ public class AuthController {
 	@Autowired
 	private JwtGenerator jwtGenerator;
 	
+	private static final Logger logger = LogManager.getLogger(AuthController.class);
 
 
 	@PostMapping("login")
 	public ResponseEntity<AuthResponseDto> login(@RequestBody LoginDto loginDto){
 
+		logger.info("Login request received for username: {}", loginDto.getUsername());
 		AuthResponseDto authResponseDto = authService.login(loginDto);
+		logger.info("Login successful for username: {}", loginDto.getUsername());
 		return new ResponseEntity<>(authResponseDto,HttpStatus.OK);
 	}
 	
 	@PostMapping("register")
 	public String register(@RequestBody RequestDto requestDto){
-		return authService.register(requestDto);
+		logger.info("Register endpoint called with username: {}", requestDto.getUsername());
+		String result = authService.register(requestDto);
+		logger.info("Registration result for user {}: {}", requestDto.getUsername(), result);
+		return result;
+		
 	}
 	
 	
@@ -57,6 +65,7 @@ public class AuthController {
 //		
 //		List<SimpleGrantedAuthority> hata = new ArrayList<>();
 //		return hata;
+		logger.info("getRole endpoint called with Authorization header: {}", authorizationHeader);
 		return authService.getRole(authorizationHeader);
 	}
 	
