@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="WARN">
 	<Properties>
-		<Property name="filename">C:\Users\oguzy\Desktop\app.log</Property>
+		<Property name="filename">C:\Users\oguzy\Desktop\BackEnd Project\TokenService\TokenService\logs\token.log</Property>
 	</Properties>
 	<Appenders>
 		<Console name="STDOUT" target="SYSTEM_OUT">
@@ -14,7 +14,7 @@
 		</File>
 	</Appenders>
 	<Loggers>
-		<Root level="debug">
+		<Root level="INFO">
 			<AppenderRef ref="STDOUT" />
 			<AppenderRef ref="file" />
 		</Root>
