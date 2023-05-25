@@ -55,16 +55,7 @@ public class AuthController {
 	
 	@GetMapping("/getRole")
 	public List<SimpleGrantedAuthority> getRole(@RequestHeader("Authorization") String authorizationHeader){
-//		String jwtToken = authorizationHeader.substring(7);
-//		
-//		if (jwtGenerator.validateToken(jwtToken)) {
-//			List<SimpleGrantedAuthority> roles = jwtGenerator.getAuthoritiesFromToken(jwtToken);
-//			
-//			return roles;
-//		}
-//		
-//		List<SimpleGrantedAuthority> hata = new ArrayList<>();
-//		return hata;
+
 		logger.info("getRole endpoint called with Authorization header: {}", authorizationHeader);
 		return authService.getRole(authorizationHeader);
 	}
