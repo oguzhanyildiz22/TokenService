@@ -1,0 +1,62 @@
+version: '2.4'
+services:
+  tokenservice:
+    container_name: Container-B
+    image: token-service:latest
+    ports:
+      - 8000:8000
+    networks:
+      - my-network     
+    environment:
+      - spring.datasource.url=jdbc:postgresql://host.docker.internal:5432/backend
+      - spring.datasource.username=postgres
+      - spring.datasource.password=12345
+      - spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+      - spring.jpa.hibernate.ddl-auto=update
+      - spring.jpa.hibernate.show-sql=true
+      - spring.jpa.properties.hibernate.enable_lazy_load_no_trans=true
+      - spring.datasource.hikari.auto-commit=false
+
+  userService:
+    container_name: Container-A
+    image: user-service:latest
+    ports:
+      - 8001:8001
+    networks:
+      - my-network
+    depends_on:
+      - tokenservice      
+    environment:
+      - spring.datasource.url=jdbc:postgresql://host.docker.internal:5432/backend
+      - spring.datasource.username=postgres
+      - spring.datasource.password=12345
+      - spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+      - spring.jpa.hibernate.ddl-auto=update
+      - spring.jpa.hibernate.show-sql=true
+      - spring.jpa.properties.hibernate.enable_lazy_load_no_trans=true
+      - spring.datasource.hikari.auto-commit=false
+
+  defectService:
+    container_name: Container-C
+    image: defect-service:latest
+    ports:
+      - 8002:8002
+    networks:
+      - my-network
+    depends_on:
+      - tokenservice
+    environment:
+      - spring.datasource.url=jdbc:postgresql://host.docker.internal:5432/backend
+      - spring.datasource.username=postgres
+      - spring.datasource.password=12345
+      - spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+      - spring.jpa.hibernate.ddl-auto=update
+      - spring.jpa.hibernate.show-sql=true
+      - spring.jpa.properties.hibernate.enable_lazy_load_no_trans=true
+      - spring.datasource.hikari.auto-commit=false
+
+networks:
+  my-network:
+    driver: bridge
+
+
