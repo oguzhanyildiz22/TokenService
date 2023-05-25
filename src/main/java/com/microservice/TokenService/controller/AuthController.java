@@ -18,7 +18,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.microservice.TokenService.dto.AuthResponseDto;
 import com.microservice.TokenService.dto.LoginDto;
 import com.microservice.TokenService.dto.RequestDto;
-import com.microservice.TokenService.security.JwtGenerator;
 import com.microservice.TokenService.service.abstracts.AuthService;
 
 @RestController
@@ -27,42 +26,32 @@ public class AuthController {
 
 	@Autowired
 	private AuthService authService;
-	
-	@Autowired
-	private JwtGenerator jwtGenerator;
-	
+
 	private static final Logger logger = LogManager.getLogger(AuthController.class);
 
-
 	@PostMapping("login")
-	public ResponseEntity<AuthResponseDto> login(@RequestBody LoginDto loginDto){
+	public ResponseEntity<AuthResponseDto> login(@RequestBody LoginDto loginDto) {
 
 		logger.info("Login request received for username: {}", loginDto.getUsername());
 		AuthResponseDto authResponseDto = authService.login(loginDto);
 		logger.info("Login successful for username: {}", loginDto.getUsername());
-		return new ResponseEntity<>(authResponseDto,HttpStatus.OK);
+		return new ResponseEntity<>(authResponseDto, HttpStatus.OK);
 	}
-	
+
 	@PostMapping("register")
-	public String register(@RequestBody RequestDto requestDto){
+	public String register(@RequestBody RequestDto requestDto) {
 		logger.info("Register endpoint called with username: {}", requestDto.getUsername());
 		String result = authService.register(requestDto);
 		logger.info("Registration result for user {}: {}", requestDto.getUsername(), result);
 		return result;
-		
+
 	}
-	
-	
+
 	@GetMapping("/getRole")
-	public List<SimpleGrantedAuthority> getRole(@RequestHeader("Authorization") String authorizationHeader){
+	public List<SimpleGrantedAuthority> getRole(@RequestHeader("Authorization") String authorizationHeader) {
 
 		logger.info("getRole endpoint called with Authorization header: {}", authorizationHeader);
 		return authService.getRole(authorizationHeader);
 	}
-	
-	
 
-	
-	
-	
 }

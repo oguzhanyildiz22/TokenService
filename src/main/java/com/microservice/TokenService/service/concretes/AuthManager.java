@@ -70,7 +70,7 @@ public class AuthManager implements AuthService{
 		
 		logger.info("Registering user {}", requestDto.getUsername());
 		
-		if (existsByUsername(requestDto)) {
+		if (userRepository.existsByUsername(requestDto.getUsername())) {
 			logger.warn("Username {} is taken", requestDto.getUsername());
 			return "Username is taken!";
 		}
@@ -79,7 +79,7 @@ public class AuthManager implements AuthService{
 		user.setPassword(passwordEncoder.encode(requestDto.getPassword()));
 		
 	
-		if (existsByName(requestDto)) {
+		if (!roleRepository.existsByName(requestDto.getRole())) {
 			 logger.warn("Role name {} is invalid", requestDto.getRole());
 			return "Wrong role_name. You can only use these words:'ADMIN','OPERATOR','TEAM_LEADER'";
 		}
@@ -91,22 +91,6 @@ public class AuthManager implements AuthService{
 		logger.info("User {} registered successfully", requestDto.getUsername());
 		return "register successful";
 		
-	}
-
-	@Override
-	public boolean existsByUsername(RequestDto requestDto) {
-		if (userRepository.existsByUsername(requestDto.getUsername())) {
-			return true;
-		}
-		return false;
-	}
-
-	@Override
-	public boolean existsByName(RequestDto requestDto) {
-		if (!roleRepository.existsByName(requestDto.getRole())) {
-			return true;
-		}
-		return false;
 	}
 
 

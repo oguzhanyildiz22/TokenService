@@ -28,18 +28,6 @@ public interface AuthService {
 	 */
 	String register(RequestDto requestDto);
 	
-	/**
-	 * checks if the username from the request exists in database
-	 * @param requestDto <br> String username <br> String password <br> String role
-	 * @return boolean type --> "true" or "false"
-	 */
-	boolean existsByUsername(RequestDto requestDto);
-	/**
-	 * checks if the role from the request exists in database 
-	 * @param requestDto : <br> String username <br> String password <br> String role
-	 * @return boolean type --> "true" or "false"
-	 */
-	boolean existsByName(RequestDto requestDto);
 	
 	/**
 	 * Returns the roles of the user with the JWT token in the Authorization header.

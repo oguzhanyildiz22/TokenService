@@ -1,0 +1,424 @@
+[INFO ] 2023-05-25 21:57:35.585 [main] AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.microservice.TokenService.AuthManagerTest]: AuthManagerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO ] 2023-05-25 21:57:35.892 [main] SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.microservice.TokenService.TokenServiceApplication for test class com.microservice.TokenService.AuthManagerTest
+[INFO ] 2023-05-25 21:57:36.996 [background-preinit] Version - HV000001: Hibernate Validator 8.0.0.Final
+[INFO ] 2023-05-25 21:57:37.063 [main] AuthManagerTest - Starting AuthManagerTest using Java 19.0.2 with PID 20276 (started by oguzyldz in C:\Users\oguzy\Desktop\BackEnd Project\TokenService\TokenService)
+[INFO ] 2023-05-25 21:57:37.073 [main] AuthManagerTest - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-05-25 21:57:39.023 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2023-05-25 21:57:39.203 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 151 ms. Found 2 JPA repository interfaces.
+[INFO ] 2023-05-25 21:57:40.645 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2023-05-25 21:57:40.845 [main] Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+[WARN ] 2023-05-25 21:57:41.265 [main] deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+[INFO ] 2023-05-25 21:57:41.894 [main] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2023-05-25 21:57:42.465 [main] HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@75dd0f94
+[INFO ] 2023-05-25 21:57:42.471 [main] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2023-05-25 21:57:42.584 [main] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2023-05-25 21:57:44.996 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2023-05-25 21:57:45.027 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2023-05-25 21:57:46.378 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2023-05-25 21:57:47.363 [main] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@943cf5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2926f7bd, org.springframework.security.web.context.SecurityContextHolderFilter@2686a801, org.springframework.security.web.header.HeaderWriterFilter@5003c114, org.springframework.security.web.authentication.logout.LogoutFilter@dc3eda6, com.microservice.TokenService.security.JWTAuthenticationFilter@7d0312a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@751b901a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4f6a5cc9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5d24703e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5a20f793, org.springframework.security.web.session.SessionManagementFilter@39acf187, org.springframework.security.web.access.ExceptionTranslationFilter@769a9b7a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2d4f1ddd]
+[INFO ] 2023-05-25 21:57:48.309 [main] AuthManagerTest - Started AuthManagerTest in 12.015 seconds (process running for 16.069)
+[INFO ] 2023-05-25 21:57:50.440 [main] AuthManager - Authenticating user testuser
+[INFO ] 2023-05-25 21:57:50.456 [main] AuthManager - User testuser authenticated successfully
+[INFO ] 2023-05-25 21:57:50.458 [main] AuthManager - Generated JWT token for user testuser
+[INFO ] 2023-05-25 21:57:50.458 [main] AuthManager - Returning auth response for user testuser
+[INFO ] 2023-05-25 21:57:50.603 [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2023-05-25 21:57:50.620 [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2023-05-25 21:57:50.644 [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 2023-05-25 21:58:13.799 [main] AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.microservice.TokenService.AuthManagerTest]: AuthManagerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO ] 2023-05-25 21:58:14.109 [main] SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.microservice.TokenService.TokenServiceApplication for test class com.microservice.TokenService.AuthManagerTest
+[INFO ] 2023-05-25 21:58:15.206 [background-preinit] Version - HV000001: Hibernate Validator 8.0.0.Final
+[INFO ] 2023-05-25 21:58:15.268 [main] AuthManagerTest - Starting AuthManagerTest using Java 19.0.2 with PID 18676 (started by oguzyldz in C:\Users\oguzy\Desktop\BackEnd Project\TokenService\TokenService)
+[INFO ] 2023-05-25 21:58:15.277 [main] AuthManagerTest - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-05-25 21:58:17.336 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2023-05-25 21:58:17.538 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 171 ms. Found 2 JPA repository interfaces.
+[INFO ] 2023-05-25 21:58:18.915 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2023-05-25 21:58:19.145 [main] Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+[WARN ] 2023-05-25 21:58:19.552 [main] deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+[INFO ] 2023-05-25 21:58:20.159 [main] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2023-05-25 21:58:20.774 [main] HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4ccdacf5
+[INFO ] 2023-05-25 21:58:20.779 [main] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2023-05-25 21:58:20.857 [main] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2023-05-25 21:58:23.206 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2023-05-25 21:58:23.227 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2023-05-25 21:58:24.470 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2023-05-25 21:58:25.561 [main] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@32b8992e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3ef7fb04, org.springframework.security.web.context.SecurityContextHolderFilter@90c01ab, org.springframework.security.web.header.HeaderWriterFilter@28c00acd, org.springframework.security.web.authentication.logout.LogoutFilter@40b958c5, com.microservice.TokenService.security.JWTAuthenticationFilter@1c7fd2e0, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@63fde7ca, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@71e55e48, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@36696821, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2446be5f, org.springframework.security.web.session.SessionManagementFilter@4d7fba20, org.springframework.security.web.access.ExceptionTranslationFilter@70d16858, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@54f62ac6]
+[INFO ] 2023-05-25 21:58:26.503 [main] AuthManagerTest - Started AuthManagerTest in 12.01 seconds (process running for 15.911)
+[INFO ] 2023-05-25 21:58:28.490 [main] AuthManager - Authenticating user testuser
+[INFO ] 2023-05-25 21:58:28.506 [main] AuthManager - User testuser authenticated successfully
+[INFO ] 2023-05-25 21:58:28.510 [main] AuthManager - Generated JWT token for user testuser
+[INFO ] 2023-05-25 21:58:28.512 [main] AuthManager - Returning auth response for user testuser
+[INFO ] 2023-05-25 21:58:28.664 [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2023-05-25 21:58:28.672 [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2023-05-25 21:58:28.698 [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 2023-05-25 23:50:13.939 [main] AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.microservice.TokenService.AuthManagerTest]: AuthManagerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO ] 2023-05-25 23:50:14.197 [main] SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.microservice.TokenService.TokenServiceApplication for test class com.microservice.TokenService.AuthManagerTest
+[INFO ] 2023-05-25 23:50:15.280 [background-preinit] Version - HV000001: Hibernate Validator 8.0.0.Final
+[INFO ] 2023-05-25 23:50:15.325 [main] AuthManagerTest - Starting AuthManagerTest using Java 19.0.2 with PID 808 (started by oguzyldz in C:\Users\oguzy\Desktop\BackEnd Project\TokenService\TokenService)
+[INFO ] 2023-05-25 23:50:15.334 [main] AuthManagerTest - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-05-25 23:50:17.225 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2023-05-25 23:50:17.412 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 160 ms. Found 2 JPA repository interfaces.
+[INFO ] 2023-05-25 23:50:18.799 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2023-05-25 23:50:18.995 [main] Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+[WARN ] 2023-05-25 23:50:19.460 [main] deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+[INFO ] 2023-05-25 23:50:20.106 [main] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2023-05-25 23:50:20.884 [main] HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4afdfc0f
+[INFO ] 2023-05-25 23:50:20.889 [main] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2023-05-25 23:50:20.989 [main] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2023-05-25 23:50:23.369 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2023-05-25 23:50:23.394 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2023-05-25 23:50:24.634 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2023-05-25 23:50:25.534 [main] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3751baf6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@27e656e6, org.springframework.security.web.context.SecurityContextHolderFilter@5af1b221, org.springframework.security.web.header.HeaderWriterFilter@6e4bccc, org.springframework.security.web.authentication.logout.LogoutFilter@69d2c460, com.microservice.TokenService.security.JWTAuthenticationFilter@6f00c40e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@438a65a7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7d49fe37, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@74ab8610, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3cfab56d, org.springframework.security.web.session.SessionManagementFilter@643a73fa, org.springframework.security.web.access.ExceptionTranslationFilter@2d568cff, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@32d8e58d]
+[INFO ] 2023-05-25 23:50:26.405 [main] AuthManagerTest - Started AuthManagerTest in 11.836 seconds (process running for 16.027)
+[INFO ] 2023-05-25 23:50:29.355 [main] AuthManager - Authenticating user testuser
+[INFO ] 2023-05-25 23:50:29.377 [main] AuthManager - User testuser authenticated successfully
+[INFO ] 2023-05-25 23:50:29.378 [main] AuthManager - Generated JWT token for user testuser
+[INFO ] 2023-05-25 23:50:29.379 [main] AuthManager - Returning auth response for user testuser
+[INFO ] 2023-05-25 23:50:29.520 [main] AuthManager - Registering user testuser
+[WARN ] 2023-05-25 23:50:29.524 [main] AuthManager - Username testuser is taken
+[INFO ] 2023-05-25 23:50:29.620 [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2023-05-25 23:50:29.629 [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2023-05-25 23:50:29.672 [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 2023-05-25 23:50:43.713 [main] AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.microservice.TokenService.AuthManagerTest]: AuthManagerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO ] 2023-05-25 23:50:43.993 [main] SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.microservice.TokenService.TokenServiceApplication for test class com.microservice.TokenService.AuthManagerTest
+[INFO ] 2023-05-25 23:50:45.033 [background-preinit] Version - HV000001: Hibernate Validator 8.0.0.Final
+[INFO ] 2023-05-25 23:50:45.077 [main] AuthManagerTest - Starting AuthManagerTest using Java 19.0.2 with PID 13032 (started by oguzyldz in C:\Users\oguzy\Desktop\BackEnd Project\TokenService\TokenService)
+[INFO ] 2023-05-25 23:50:45.085 [main] AuthManagerTest - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-05-25 23:50:46.965 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2023-05-25 23:50:47.150 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 156 ms. Found 2 JPA repository interfaces.
+[INFO ] 2023-05-25 23:50:48.555 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2023-05-25 23:50:48.712 [main] Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+[WARN ] 2023-05-25 23:50:49.120 [main] deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+[INFO ] 2023-05-25 23:50:49.682 [main] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2023-05-25 23:50:50.149 [main] HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@745926c3
+[INFO ] 2023-05-25 23:50:50.154 [main] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2023-05-25 23:50:50.230 [main] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2023-05-25 23:50:52.508 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2023-05-25 23:50:52.533 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2023-05-25 23:50:53.804 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2023-05-25 23:50:54.711 [main] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@27e656e6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3cfab56d, org.springframework.security.web.context.SecurityContextHolderFilter@40b958c5, org.springframework.security.web.header.HeaderWriterFilter@49741e80, org.springframework.security.web.authentication.logout.LogoutFilter@34a99d8, com.microservice.TokenService.security.JWTAuthenticationFilter@1f381eaf, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@543c887, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@74ab8610, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@231c521e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6b6fde93, org.springframework.security.web.session.SessionManagementFilter@17554316, org.springframework.security.web.access.ExceptionTranslationFilter@2caa9666, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4c941d19]
+[INFO ] 2023-05-25 23:50:55.607 [main] AuthManagerTest - Started AuthManagerTest in 11.255 seconds (process running for 15.053)
+[INFO ] 2023-05-25 23:50:58.204 [main] AuthManager - Registering user testuser
+[WARN ] 2023-05-25 23:50:58.221 [main] AuthManager - Username testuser is taken
+[INFO ] 2023-05-25 23:50:58.417 [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2023-05-25 23:50:58.428 [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2023-05-25 23:50:58.454 [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 2023-05-25 23:52:57.274 [main] AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.microservice.TokenService.AuthManagerTest]: AuthManagerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO ] 2023-05-25 23:52:57.551 [main] SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.microservice.TokenService.TokenServiceApplication for test class com.microservice.TokenService.AuthManagerTest
+[INFO ] 2023-05-25 23:52:58.638 [background-preinit] Version - HV000001: Hibernate Validator 8.0.0.Final
+[INFO ] 2023-05-25 23:52:58.689 [main] AuthManagerTest - Starting AuthManagerTest using Java 19.0.2 with PID 10696 (started by oguzyldz in C:\Users\oguzy\Desktop\BackEnd Project\TokenService\TokenService)
+[INFO ] 2023-05-25 23:52:58.698 [main] AuthManagerTest - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-05-25 23:53:00.460 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2023-05-25 23:53:00.645 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 157 ms. Found 2 JPA repository interfaces.
+[INFO ] 2023-05-25 23:53:02.080 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2023-05-25 23:53:02.260 [main] Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+[WARN ] 2023-05-25 23:53:02.665 [main] deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+[INFO ] 2023-05-25 23:53:03.254 [main] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2023-05-25 23:53:03.786 [main] HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1aac0a47
+[INFO ] 2023-05-25 23:53:03.791 [main] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2023-05-25 23:53:03.871 [main] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2023-05-25 23:53:06.384 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2023-05-25 23:53:06.421 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2023-05-25 23:53:07.644 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2023-05-25 23:53:08.488 [main] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@28200d43, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7e24a2e2, org.springframework.security.web.context.SecurityContextHolderFilter@623ed5ed, org.springframework.security.web.header.HeaderWriterFilter@1372696b, org.springframework.security.web.authentication.logout.LogoutFilter@5b49b1df, com.microservice.TokenService.security.JWTAuthenticationFilter@170f0fd6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@725490dd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2ba4b32b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@532e00bd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@38318d67, org.springframework.security.web.session.SessionManagementFilter@6c68f29c, org.springframework.security.web.access.ExceptionTranslationFilter@5ca006ac, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@df04d12]
+[INFO ] 2023-05-25 23:53:09.326 [main] AuthManagerTest - Started AuthManagerTest in 11.387 seconds (process running for 15.233)
+[INFO ] 2023-05-25 23:53:11.884 [main] AuthManager - Authenticating user testuser
+[INFO ] 2023-05-25 23:53:11.900 [main] AuthManager - User testuser authenticated successfully
+[INFO ] 2023-05-25 23:53:11.902 [main] AuthManager - Generated JWT token for user testuser
+[INFO ] 2023-05-25 23:53:11.903 [main] AuthManager - Returning auth response for user testuser
+[INFO ] 2023-05-25 23:53:12.027 [main] AuthManager - Registering user testuser
+[WARN ] 2023-05-25 23:53:12.030 [main] AuthManager - Username testuser is taken
+[INFO ] 2023-05-25 23:53:12.133 [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2023-05-25 23:53:12.142 [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2023-05-25 23:53:12.179 [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 2023-05-25 23:55:02.079 [main] AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.microservice.TokenService.AuthManagerTest]: AuthManagerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO ] 2023-05-25 23:55:02.351 [main] SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.microservice.TokenService.TokenServiceApplication for test class com.microservice.TokenService.AuthManagerTest
+[INFO ] 2023-05-25 23:55:03.392 [background-preinit] Version - HV000001: Hibernate Validator 8.0.0.Final
+[INFO ] 2023-05-25 23:55:03.437 [main] AuthManagerTest - Starting AuthManagerTest using Java 19.0.2 with PID 16200 (started by oguzyldz in C:\Users\oguzy\Desktop\BackEnd Project\TokenService\TokenService)
+[INFO ] 2023-05-25 23:55:03.449 [main] AuthManagerTest - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-05-25 23:55:05.718 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2023-05-25 23:55:05.921 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 172 ms. Found 2 JPA repository interfaces.
+[INFO ] 2023-05-25 23:55:07.500 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2023-05-25 23:55:07.717 [main] Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+[WARN ] 2023-05-25 23:55:08.225 [main] deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+[INFO ] 2023-05-25 23:55:09.074 [main] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2023-05-25 23:55:09.831 [main] HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1aac0a47
+[INFO ] 2023-05-25 23:55:09.837 [main] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2023-05-25 23:55:09.932 [main] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2023-05-25 23:55:12.641 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2023-05-25 23:55:12.667 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2023-05-25 23:55:13.977 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2023-05-25 23:55:14.889 [main] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@71db6703, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@470ad01c, org.springframework.security.web.context.SecurityContextHolderFilter@6ac0fd1d, org.springframework.security.web.header.HeaderWriterFilter@215f8d7, org.springframework.security.web.authentication.logout.LogoutFilter@3f1e18b1, com.microservice.TokenService.security.JWTAuthenticationFilter@577f81a0, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@12948e7a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6ce8bf64, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6413eeb7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6e349258, org.springframework.security.web.session.SessionManagementFilter@47ab3688, org.springframework.security.web.access.ExceptionTranslationFilter@73633230, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@390978]
+[INFO ] 2023-05-25 23:55:15.703 [main] AuthManagerTest - Started AuthManagerTest in 12.974 seconds (process running for 17.889)
+[INFO ] 2023-05-25 23:55:18.382 [main] AuthManager - Authenticating user testuser
+[INFO ] 2023-05-25 23:55:18.396 [main] AuthManager - User testuser authenticated successfully
+[INFO ] 2023-05-25 23:55:18.397 [main] AuthManager - Generated JWT token for user testuser
+[INFO ] 2023-05-25 23:55:18.398 [main] AuthManager - Returning auth response for user testuser
+[INFO ] 2023-05-25 23:55:18.526 [main] AuthManager - Registering user testuser
+[WARN ] 2023-05-25 23:55:18.529 [main] AuthManager - Username testuser is taken
+[INFO ] 2023-05-25 23:55:18.574 [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2023-05-25 23:55:18.582 [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2023-05-25 23:55:18.600 [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 2023-05-25 23:55:47.517 [main] AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.microservice.TokenService.AuthManagerTest]: AuthManagerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO ] 2023-05-25 23:55:47.828 [main] SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.microservice.TokenService.TokenServiceApplication for test class com.microservice.TokenService.AuthManagerTest
+[INFO ] 2023-05-25 23:55:48.889 [background-preinit] Version - HV000001: Hibernate Validator 8.0.0.Final
+[INFO ] 2023-05-25 23:55:48.944 [main] AuthManagerTest - Starting AuthManagerTest using Java 19.0.2 with PID 21124 (started by oguzyldz in C:\Users\oguzy\Desktop\BackEnd Project\TokenService\TokenService)
+[INFO ] 2023-05-25 23:55:48.952 [main] AuthManagerTest - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-05-25 23:55:50.794 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2023-05-25 23:55:50.970 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 143 ms. Found 2 JPA repository interfaces.
+[INFO ] 2023-05-25 23:55:52.306 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2023-05-25 23:55:52.511 [main] Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+[WARN ] 2023-05-25 23:55:52.955 [main] deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+[INFO ] 2023-05-25 23:55:53.585 [main] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2023-05-25 23:55:54.198 [main] HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4751cd3
+[INFO ] 2023-05-25 23:55:54.202 [main] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2023-05-25 23:55:54.279 [main] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2023-05-25 23:55:56.644 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2023-05-25 23:55:56.668 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2023-05-25 23:55:57.895 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2023-05-25 23:55:58.845 [main] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4c89c98a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@28200d43, org.springframework.security.web.context.SecurityContextHolderFilter@47d7e4b6, org.springframework.security.web.header.HeaderWriterFilter@dc3eda6, org.springframework.security.web.authentication.logout.LogoutFilter@229c4d34, com.microservice.TokenService.security.JWTAuthenticationFilter@522f74a1, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1acfc058, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@49e92724, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2ba4b32b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7e24a2e2, org.springframework.security.web.session.SessionManagementFilter@13e6c544, org.springframework.security.web.access.ExceptionTranslationFilter@67afc9b6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7d0e43d6]
+[INFO ] 2023-05-25 23:55:59.679 [main] AuthManagerTest - Started AuthManagerTest in 11.495 seconds (process running for 15.295)
+[INFO ] 2023-05-25 23:56:02.363 [main] AuthManager - Registering user testuser
+[WARN ] 2023-05-25 23:56:02.376 [main] AuthManager - Username testuser is taken
+[INFO ] 2023-05-25 23:56:02.584 [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2023-05-25 23:56:02.596 [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2023-05-25 23:56:02.624 [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 2023-05-25 23:57:07.554 [main] AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.microservice.TokenService.AuthManagerTest]: AuthManagerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO ] 2023-05-25 23:57:07.829 [main] SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.microservice.TokenService.TokenServiceApplication for test class com.microservice.TokenService.AuthManagerTest
+[INFO ] 2023-05-25 23:57:08.996 [background-preinit] Version - HV000001: Hibernate Validator 8.0.0.Final
+[INFO ] 2023-05-25 23:57:09.047 [main] AuthManagerTest - Starting AuthManagerTest using Java 19.0.2 with PID 14200 (started by oguzyldz in C:\Users\oguzy\Desktop\BackEnd Project\TokenService\TokenService)
+[INFO ] 2023-05-25 23:57:09.057 [main] AuthManagerTest - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-05-25 23:57:10.927 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2023-05-25 23:57:11.093 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 135 ms. Found 2 JPA repository interfaces.
+[INFO ] 2023-05-25 23:57:12.527 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2023-05-25 23:57:12.732 [main] Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+[WARN ] 2023-05-25 23:57:13.101 [main] deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+[INFO ] 2023-05-25 23:57:13.731 [main] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2023-05-25 23:57:14.317 [main] HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@194b9783
+[INFO ] 2023-05-25 23:57:14.325 [main] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2023-05-25 23:57:14.404 [main] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2023-05-25 23:57:16.856 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2023-05-25 23:57:16.882 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2023-05-25 23:57:18.119 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2023-05-25 23:57:19.084 [main] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7d12fb85, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@71db6703, org.springframework.security.web.context.SecurityContextHolderFilter@49482761, org.springframework.security.web.header.HeaderWriterFilter@21539796, org.springframework.security.web.authentication.logout.LogoutFilter@689ea211, com.microservice.TokenService.security.JWTAuthenticationFilter@3958db82, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3af6c672, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@744199bb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6ce8bf64, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@470ad01c, org.springframework.security.web.session.SessionManagementFilter@532e00bd, org.springframework.security.web.access.ExceptionTranslationFilter@32eb38e5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@309d54ac]
+[INFO ] 2023-05-25 23:57:19.971 [main] AuthManagerTest - Started AuthManagerTest in 11.752 seconds (process running for 15.588)
+[INFO ] 2023-05-25 23:57:22.467 [main] AuthManager - Registering user testuser
+[WARN ] 2023-05-25 23:57:22.484 [main] AuthManager - Username testuser is taken
+[INFO ] 2023-05-25 23:57:22.661 [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2023-05-25 23:57:22.669 [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2023-05-25 23:57:22.716 [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 2023-05-25 23:59:35.896 [main] AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.microservice.TokenService.AuthManagerTest]: AuthManagerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO ] 2023-05-25 23:59:36.187 [main] SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.microservice.TokenService.TokenServiceApplication for test class com.microservice.TokenService.AuthManagerTest
+[INFO ] 2023-05-25 23:59:37.230 [background-preinit] Version - HV000001: Hibernate Validator 8.0.0.Final
+[INFO ] 2023-05-25 23:59:37.283 [main] AuthManagerTest - Starting AuthManagerTest using Java 19.0.2 with PID 18492 (started by oguzyldz in C:\Users\oguzy\Desktop\BackEnd Project\TokenService\TokenService)
+[INFO ] 2023-05-25 23:59:37.291 [main] AuthManagerTest - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-05-25 23:59:39.157 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2023-05-25 23:59:39.329 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 142 ms. Found 2 JPA repository interfaces.
+[INFO ] 2023-05-25 23:59:40.663 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2023-05-25 23:59:40.847 [main] Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+[WARN ] 2023-05-25 23:59:41.321 [main] deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+[INFO ] 2023-05-25 23:59:41.939 [main] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2023-05-25 23:59:42.491 [main] HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@678586f0
+[INFO ] 2023-05-25 23:59:42.497 [main] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2023-05-25 23:59:42.583 [main] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2023-05-25 23:59:44.942 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2023-05-25 23:59:44.972 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2023-05-25 23:59:46.155 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2023-05-25 23:59:47.100 [main] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@c3c63c1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5e75cf7a, org.springframework.security.web.context.SecurityContextHolderFilter@7a79d99c, org.springframework.security.web.header.HeaderWriterFilter@5af1b221, org.springframework.security.web.authentication.logout.LogoutFilter@744199bb, com.microservice.TokenService.security.JWTAuthenticationFilter@61c0fb12, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2d2fe68a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6dc7b7f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4425b6ed, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6f12fca0, org.springframework.security.web.session.SessionManagementFilter@3f0b5619, org.springframework.security.web.access.ExceptionTranslationFilter@17554316, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1ccce165]
+[INFO ] 2023-05-25 23:59:47.950 [main] AuthManagerTest - Started AuthManagerTest in 11.404 seconds (process running for 15.206)
+[INFO ] 2023-05-25 23:59:50.479 [main] AuthManager - Registering user testuser
+[WARN ] 2023-05-25 23:59:50.493 [main] AuthManager - Username testuser is taken
+[INFO ] 2023-05-25 23:59:50.647 [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2023-05-25 23:59:50.656 [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2023-05-25 23:59:50.694 [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 2023-05-26 00:08:56.606 [main] AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.microservice.TokenService.AuthManagerTest]: AuthManagerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO ] 2023-05-26 00:08:56.984 [main] SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.microservice.TokenService.TokenServiceApplication for test class com.microservice.TokenService.AuthManagerTest
+[INFO ] 2023-05-26 00:08:58.365 [background-preinit] Version - HV000001: Hibernate Validator 8.0.0.Final
+[INFO ] 2023-05-26 00:08:58.422 [main] AuthManagerTest - Starting AuthManagerTest using Java 19.0.2 with PID 25044 (started by oguzyldz in C:\Users\oguzy\Desktop\BackEnd Project\TokenService\TokenService)
+[INFO ] 2023-05-26 00:08:58.431 [main] AuthManagerTest - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-05-26 00:09:00.438 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2023-05-26 00:09:00.602 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 140 ms. Found 2 JPA repository interfaces.
+[INFO ] 2023-05-26 00:09:02.016 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2023-05-26 00:09:02.287 [main] Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+[WARN ] 2023-05-26 00:09:02.740 [main] deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+[INFO ] 2023-05-26 00:09:03.367 [main] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2023-05-26 00:09:03.972 [main] HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1109730f
+[INFO ] 2023-05-26 00:09:03.983 [main] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2023-05-26 00:09:04.072 [main] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2023-05-26 00:09:06.576 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2023-05-26 00:09:06.607 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2023-05-26 00:09:07.998 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2023-05-26 00:09:09.150 [main] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@70b0dc92, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@309d54ac, org.springframework.security.web.context.SecurityContextHolderFilter@729d1428, org.springframework.security.web.header.HeaderWriterFilter@4f6a5cc9, org.springframework.security.web.authentication.logout.LogoutFilter@49e92724, com.microservice.TokenService.security.JWTAuthenticationFilter@2571bdf4, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7ff7e353, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1728d307, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@252d2ac0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@390978, org.springframework.security.web.session.SessionManagementFilter@296949c8, org.springframework.security.web.access.ExceptionTranslationFilter@2686a801, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6672b0ea]
+[INFO ] 2023-05-26 00:09:10.185 [main] AuthManagerTest - Started AuthManagerTest in 12.725 seconds (process running for 16.953)
+[INFO ] 2023-05-26 00:09:13.022 [main] AuthManager - Registering user testuser
+[WARN ] 2023-05-26 00:09:13.030 [main] AuthManager - Username testuser is taken
+[INFO ] 2023-05-26 00:09:13.242 [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2023-05-26 00:09:13.252 [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2023-05-26 00:09:13.266 [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 2023-05-26 00:09:30.722 [main] AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.microservice.TokenService.AuthManagerTest]: AuthManagerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO ] 2023-05-26 00:09:30.988 [main] SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.microservice.TokenService.TokenServiceApplication for test class com.microservice.TokenService.AuthManagerTest
+[INFO ] 2023-05-26 00:09:32.088 [background-preinit] Version - HV000001: Hibernate Validator 8.0.0.Final
+[INFO ] 2023-05-26 00:09:32.140 [main] AuthManagerTest - Starting AuthManagerTest using Java 19.0.2 with PID 21984 (started by oguzyldz in C:\Users\oguzy\Desktop\BackEnd Project\TokenService\TokenService)
+[INFO ] 2023-05-26 00:09:32.148 [main] AuthManagerTest - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-05-26 00:09:34.088 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2023-05-26 00:09:34.250 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 138 ms. Found 2 JPA repository interfaces.
+[INFO ] 2023-05-26 00:09:35.595 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2023-05-26 00:09:35.801 [main] Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+[WARN ] 2023-05-26 00:09:36.235 [main] deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+[INFO ] 2023-05-26 00:09:36.796 [main] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2023-05-26 00:09:37.378 [main] HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@15186ce0
+[INFO ] 2023-05-26 00:09:37.383 [main] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2023-05-26 00:09:37.476 [main] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2023-05-26 00:09:39.947 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2023-05-26 00:09:39.979 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2023-05-26 00:09:41.172 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2023-05-26 00:09:42.130 [main] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@151f1734, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@601e7c97, org.springframework.security.web.context.SecurityContextHolderFilter@2caa9666, org.springframework.security.web.header.HeaderWriterFilter@90c01ab, org.springframework.security.web.authentication.logout.LogoutFilter@1f27f354, com.microservice.TokenService.security.JWTAuthenticationFilter@3e563293, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@32d8e58d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@49741e80, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@414d466e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@c8ed958, org.springframework.security.web.session.SessionManagementFilter@504b4a97, org.springframework.security.web.access.ExceptionTranslationFilter@112b3298, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@77604a86]
+[INFO ] 2023-05-26 00:09:43.019 [main] AuthManagerTest - Started AuthManagerTest in 11.64 seconds (process running for 15.476)
+[INFO ] 2023-05-26 00:09:45.561 [main] AuthManager - Registering user testuser
+[WARN ] 2023-05-26 00:09:45.575 [main] AuthManager - Username testuser is taken
+[INFO ] 2023-05-26 00:09:45.776 [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2023-05-26 00:09:45.786 [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2023-05-26 00:09:45.814 [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 2023-05-26 00:12:22.711 [main] AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.microservice.TokenService.AuthManagerTest]: AuthManagerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO ] 2023-05-26 00:12:22.980 [main] SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.microservice.TokenService.TokenServiceApplication for test class com.microservice.TokenService.AuthManagerTest
+[INFO ] 2023-05-26 00:12:24.114 [background-preinit] Version - HV000001: Hibernate Validator 8.0.0.Final
+[INFO ] 2023-05-26 00:12:24.164 [main] AuthManagerTest - Starting AuthManagerTest using Java 19.0.2 with PID 21292 (started by oguzyldz in C:\Users\oguzy\Desktop\BackEnd Project\TokenService\TokenService)
+[INFO ] 2023-05-26 00:12:24.171 [main] AuthManagerTest - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-05-26 00:12:26.136 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2023-05-26 00:12:26.323 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 156 ms. Found 2 JPA repository interfaces.
+[INFO ] 2023-05-26 00:12:27.828 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2023-05-26 00:12:28.009 [main] Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+[WARN ] 2023-05-26 00:12:28.443 [main] deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+[INFO ] 2023-05-26 00:12:29.082 [main] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2023-05-26 00:12:29.656 [main] HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@15186ce0
+[INFO ] 2023-05-26 00:12:29.661 [main] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2023-05-26 00:12:29.773 [main] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2023-05-26 00:12:32.447 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2023-05-26 00:12:32.473 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2023-05-26 00:12:33.646 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2023-05-26 00:12:34.551 [main] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@71c1ca1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@20cf3ab3, org.springframework.security.web.context.SecurityContextHolderFilter@34a99d8, org.springframework.security.web.header.HeaderWriterFilter@4425b6ed, org.springframework.security.web.authentication.logout.LogoutFilter@217009bd, com.microservice.TokenService.security.JWTAuthenticationFilter@7359f3ac, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@29a1dab3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@13e6c544, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6c68f29c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1acfc058, org.springframework.security.web.session.SessionManagementFilter@21539796, org.springframework.security.web.access.ExceptionTranslationFilter@1f27f354, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@73c1dda3]
+[INFO ] 2023-05-26 00:12:35.487 [main] AuthManagerTest - Started AuthManagerTest in 12.122 seconds (process running for 16.114)
+[INFO ] 2023-05-26 00:12:38.100 [main] AuthManager - Authenticating user testuser
+[INFO ] 2023-05-26 00:12:38.120 [main] AuthManager - User testuser authenticated successfully
+[INFO ] 2023-05-26 00:12:38.121 [main] AuthManager - Generated JWT token for user testuser
+[INFO ] 2023-05-26 00:12:38.122 [main] AuthManager - Returning auth response for user testuser
+[INFO ] 2023-05-26 00:12:38.251 [main] AuthManager - getRole() function started.
+[INFO ] 2023-05-26 00:12:38.253 [main] AuthManager - getRole() function ended. Returning roles: [ROLE_ADMIN, ROLE_USER]
+[INFO ] 2023-05-26 00:12:38.288 [main] AuthManager - Registering user testuser
+[WARN ] 2023-05-26 00:12:38.291 [main] AuthManager - Username testuser is taken
+[INFO ] 2023-05-26 00:12:38.325 [main] AuthManager - getRole() function started.
+[INFO ] 2023-05-26 00:12:38.326 [main] AuthManager - getRole() function ended. Returning empty list.
+[INFO ] 2023-05-26 00:12:38.370 [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2023-05-26 00:12:38.379 [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2023-05-26 00:12:38.408 [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 2023-05-26 00:14:09.231 [main] AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.microservice.TokenService.AuthManagerTest]: AuthManagerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO ] 2023-05-26 00:14:09.510 [main] SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.microservice.TokenService.TokenServiceApplication for test class com.microservice.TokenService.AuthManagerTest
+[INFO ] 2023-05-26 00:14:10.605 [background-preinit] Version - HV000001: Hibernate Validator 8.0.0.Final
+[INFO ] 2023-05-26 00:14:10.657 [main] AuthManagerTest - Starting AuthManagerTest using Java 19.0.2 with PID 11772 (started by oguzyldz in C:\Users\oguzy\Desktop\BackEnd Project\TokenService\TokenService)
+[INFO ] 2023-05-26 00:14:10.665 [main] AuthManagerTest - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-05-26 00:14:12.638 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2023-05-26 00:14:12.816 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 155 ms. Found 2 JPA repository interfaces.
+[INFO ] 2023-05-26 00:14:14.276 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2023-05-26 00:14:14.465 [main] Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+[WARN ] 2023-05-26 00:14:14.864 [main] deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+[INFO ] 2023-05-26 00:14:15.457 [main] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2023-05-26 00:14:15.975 [main] HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@586728e8
+[INFO ] 2023-05-26 00:14:15.980 [main] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2023-05-26 00:14:16.054 [main] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2023-05-26 00:14:18.442 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2023-05-26 00:14:18.465 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2023-05-26 00:14:19.719 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2023-05-26 00:14:20.626 [main] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@390978, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@561c031, org.springframework.security.web.context.SecurityContextHolderFilter@5039c2cf, org.springframework.security.web.header.HeaderWriterFilter@296949c8, org.springframework.security.web.authentication.logout.LogoutFilter@58189132, com.microservice.TokenService.security.JWTAuthenticationFilter@5b160208, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7f7f544a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5ca006ac, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@dc3eda6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7343d843, org.springframework.security.web.session.SessionManagementFilter@6dc7b7f, org.springframework.security.web.access.ExceptionTranslationFilter@74ab8610, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3cfab56d]
+[INFO ] 2023-05-26 00:14:21.519 [main] AuthManagerTest - Started AuthManagerTest in 11.604 seconds (process running for 15.509)
+[INFO ] 2023-05-26 00:14:24.359 [main] AuthManager - Authenticating user testuser
+[INFO ] 2023-05-26 00:14:24.376 [main] AuthManager - User testuser authenticated successfully
+[INFO ] 2023-05-26 00:14:24.377 [main] AuthManager - Generated JWT token for user testuser
+[INFO ] 2023-05-26 00:14:24.378 [main] AuthManager - Returning auth response for user testuser
+[INFO ] 2023-05-26 00:14:24.507 [main] AuthManager - getRole() function started.
+[INFO ] 2023-05-26 00:14:24.509 [main] AuthManager - getRole() function ended. Returning roles: [ROLE_ADMIN]
+[INFO ] 2023-05-26 00:14:24.549 [main] AuthManager - Registering user testuser
+[WARN ] 2023-05-26 00:14:24.553 [main] AuthManager - Username testuser is taken
+[INFO ] 2023-05-26 00:14:24.589 [main] AuthManager - getRole() function started.
+[INFO ] 2023-05-26 00:14:24.590 [main] AuthManager - getRole() function ended. Returning empty list.
+[INFO ] 2023-05-26 00:14:24.638 [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2023-05-26 00:14:24.650 [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2023-05-26 00:14:24.667 [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 2023-05-26 00:16:00.396 [main] AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.microservice.TokenService.AuthManagerTest]: AuthManagerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO ] 2023-05-26 00:16:00.682 [main] SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.microservice.TokenService.TokenServiceApplication for test class com.microservice.TokenService.AuthManagerTest
+[INFO ] 2023-05-26 00:16:01.760 [background-preinit] Version - HV000001: Hibernate Validator 8.0.0.Final
+[INFO ] 2023-05-26 00:16:01.813 [main] AuthManagerTest - Starting AuthManagerTest using Java 19.0.2 with PID 2760 (started by oguzyldz in C:\Users\oguzy\Desktop\BackEnd Project\TokenService\TokenService)
+[INFO ] 2023-05-26 00:16:01.822 [main] AuthManagerTest - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-05-26 00:16:03.898 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2023-05-26 00:16:04.099 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 171 ms. Found 2 JPA repository interfaces.
+[INFO ] 2023-05-26 00:16:05.497 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2023-05-26 00:16:05.708 [main] Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+[WARN ] 2023-05-26 00:16:06.096 [main] deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+[INFO ] 2023-05-26 00:16:06.633 [main] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2023-05-26 00:16:07.168 [main] HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@194911c1
+[INFO ] 2023-05-26 00:16:07.174 [main] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2023-05-26 00:16:07.281 [main] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2023-05-26 00:16:10.181 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2023-05-26 00:16:10.207 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2023-05-26 00:16:11.482 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2023-05-26 00:16:12.418 [main] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@70680f88, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7f7f544a, org.springframework.security.web.context.SecurityContextHolderFilter@dc3eda6, org.springframework.security.web.header.HeaderWriterFilter@729d1428, org.springframework.security.web.authentication.logout.LogoutFilter@7dc963be, com.microservice.TokenService.security.JWTAuthenticationFilter@36ec4071, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@df04d12, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ca7bddd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@206e5183, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@70b0dc92, org.springframework.security.web.session.SessionManagementFilter@5039c2cf, org.springframework.security.web.access.ExceptionTranslationFilter@1be3a294, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@543c887]
+[INFO ] 2023-05-26 00:16:13.284 [main] AuthManagerTest - Started AuthManagerTest in 12.24 seconds (process running for 16.103)
+[INFO ] 2023-05-26 00:16:16.347 [main] AuthManager - getRole() function started.
+[INFO ] 2023-05-26 00:16:16.365 [main] AuthManager - getRole() function ended. Returning roles: [ROLE_ADMIN]
+[INFO ] 2023-05-26 00:16:16.516 [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2023-05-26 00:16:16.527 [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2023-05-26 00:16:16.558 [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 2023-05-26 00:17:23.471 [main] AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.microservice.TokenService.AuthManagerTest]: AuthManagerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO ] 2023-05-26 00:17:23.776 [main] SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.microservice.TokenService.TokenServiceApplication for test class com.microservice.TokenService.AuthManagerTest
+[INFO ] 2023-05-26 00:17:24.968 [background-preinit] Version - HV000001: Hibernate Validator 8.0.0.Final
+[INFO ] 2023-05-26 00:17:25.032 [main] AuthManagerTest - Starting AuthManagerTest using Java 19.0.2 with PID 23284 (started by oguzyldz in C:\Users\oguzy\Desktop\BackEnd Project\TokenService\TokenService)
+[INFO ] 2023-05-26 00:17:25.042 [main] AuthManagerTest - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-05-26 00:17:27.096 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2023-05-26 00:17:27.286 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 163 ms. Found 2 JPA repository interfaces.
+[INFO ] 2023-05-26 00:17:29.109 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2023-05-26 00:17:29.466 [main] Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+[WARN ] 2023-05-26 00:17:30.029 [main] deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+[INFO ] 2023-05-26 00:17:30.792 [main] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2023-05-26 00:17:31.529 [main] HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@678586f0
+[INFO ] 2023-05-26 00:17:31.537 [main] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2023-05-26 00:17:31.625 [main] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2023-05-26 00:17:34.614 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2023-05-26 00:17:34.654 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2023-05-26 00:17:36.139 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2023-05-26 00:17:37.185 [main] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7ff7e353, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@70680f88, org.springframework.security.web.context.SecurityContextHolderFilter@5ca006ac, org.springframework.security.web.header.HeaderWriterFilter@33502cfe, org.springframework.security.web.authentication.logout.LogoutFilter@1c15a6aa, com.microservice.TokenService.security.JWTAuthenticationFilter@16a15261, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7d0e43d6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1372696b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7ca7bddd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7f7f544a, org.springframework.security.web.session.SessionManagementFilter@702432cc, org.springframework.security.web.access.ExceptionTranslationFilter@296949c8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@438a65a7]
+[INFO ] 2023-05-26 00:17:38.124 [main] AuthManagerTest - Started AuthManagerTest in 13.96 seconds (process running for 18.596)
+[INFO ] 2023-05-26 00:17:41.395 [main] AuthManager - getRole() function started.
+[INFO ] 2023-05-26 00:17:41.395 [main] AuthManager - getRole() function ended. Returning empty list.
+[INFO ] 2023-05-26 00:17:41.531 [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2023-05-26 00:17:41.539 [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2023-05-26 00:17:41.563 [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 2023-05-26 00:18:52.046 [main] AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.microservice.TokenService.AuthManagerTest]: AuthManagerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO ] 2023-05-26 00:18:52.364 [main] SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.microservice.TokenService.TokenServiceApplication for test class com.microservice.TokenService.AuthManagerTest
+[INFO ] 2023-05-26 00:18:53.594 [background-preinit] Version - HV000001: Hibernate Validator 8.0.0.Final
+[INFO ] 2023-05-26 00:18:53.642 [main] AuthManagerTest - Starting AuthManagerTest using Java 19.0.2 with PID 10404 (started by oguzyldz in C:\Users\oguzy\Desktop\BackEnd Project\TokenService\TokenService)
+[INFO ] 2023-05-26 00:18:53.651 [main] AuthManagerTest - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-05-26 00:18:55.625 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2023-05-26 00:18:55.794 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 145 ms. Found 2 JPA repository interfaces.
+[INFO ] 2023-05-26 00:18:57.208 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2023-05-26 00:18:57.413 [main] Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+[WARN ] 2023-05-26 00:18:57.796 [main] deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+[INFO ] 2023-05-26 00:18:58.385 [main] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2023-05-26 00:18:58.959 [main] HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3316527e
+[INFO ] 2023-05-26 00:18:58.968 [main] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2023-05-26 00:18:59.049 [main] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2023-05-26 00:19:01.349 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2023-05-26 00:19:01.378 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2023-05-26 00:19:02.577 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2023-05-26 00:19:03.500 [main] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@18d09283, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@751b901a, org.springframework.security.web.context.SecurityContextHolderFilter@414d466e, org.springframework.security.web.header.HeaderWriterFilter@36696821, org.springframework.security.web.authentication.logout.LogoutFilter@702432cc, com.microservice.TokenService.security.JWTAuthenticationFilter@65dd2191, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@151f1734, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@643a73fa, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@dd3e1e3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6672b0ea, org.springframework.security.web.session.SessionManagementFilter@2caa9666, org.springframework.security.web.access.ExceptionTranslationFilter@39921410, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4779df3d]
+[INFO ] 2023-05-26 00:19:04.397 [main] AuthManagerTest - Started AuthManagerTest in 11.569 seconds (process running for 15.887)
+[INFO ] 2023-05-26 00:19:06.980 [main] AuthManager - Authenticating user testuser
+[INFO ] 2023-05-26 00:19:06.995 [main] AuthManager - User testuser authenticated successfully
+[INFO ] 2023-05-26 00:19:06.996 [main] AuthManager - Generated JWT token for user testuser
+[INFO ] 2023-05-26 00:19:06.997 [main] AuthManager - Returning auth response for user testuser
+[INFO ] 2023-05-26 00:19:07.134 [main] AuthManager - getRole() function started.
+[INFO ] 2023-05-26 00:19:07.136 [main] AuthManager - getRole() function ended. Returning roles: [ROLE_ADMIN]
+[INFO ] 2023-05-26 00:19:07.167 [main] AuthManager - Registering user testuser
+[WARN ] 2023-05-26 00:19:07.170 [main] AuthManager - Username testuser is taken
+[INFO ] 2023-05-26 00:19:07.206 [main] AuthManager - getRole() function started.
+[INFO ] 2023-05-26 00:19:07.208 [main] AuthManager - getRole() function ended. Returning empty list.
+[INFO ] 2023-05-26 00:19:07.249 [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2023-05-26 00:19:07.260 [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2023-05-26 00:19:07.296 [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown completed.
