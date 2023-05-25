@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration status="WARN">
+<Configuration status="DEBUG">
 	<Properties>
 		<Property name="filename">C:\Users\oguzy\Desktop\BackEnd Project\TokenService\TokenService\logs\token.log</Property>
 	</Properties>
