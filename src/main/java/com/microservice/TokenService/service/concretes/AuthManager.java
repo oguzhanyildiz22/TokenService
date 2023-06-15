@@ -43,7 +43,7 @@ public class AuthManager implements AuthService{
 	@Override
 	public AuthResponseDto login(LoginDto loginDto) {
 		
-		logger.info("Authenticating user {}", loginDto.getUsername());
+		logger.info("Begin login method to Authenticate user {}", loginDto.getUsername());
 		
 		Authentication authentication = authenticationManager.authenticate(
 				new UsernamePasswordAuthenticationToken(loginDto.getUsername()
@@ -68,7 +68,7 @@ public class AuthManager implements AuthService{
 	@Override
 	public String register(RequestDto requestDto){
 		
-		logger.info("Registering user {}", requestDto.getUsername());
+		logger.info("Begin register method for Registering user {}", requestDto.getUsername());
 		
 		if (userRepository.existsByUsername(requestDto.getUsername())) {
 			logger.warn("Username {} is taken", requestDto.getUsername());
